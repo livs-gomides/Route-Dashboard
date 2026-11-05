@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="RouteDashboard.Api/RouteDashboard.Api.csproj" />
+  <Project Path="RouteDashboard.Mobile/RouteDashboard.Mobile.csproj" />
+</Solution>

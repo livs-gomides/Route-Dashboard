@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="RouteDashboard.Mobile.CadastroPage"
+    BackgroundColor="#101010"
+    Title="Cadastro">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="18">
+
+            <Label
+                Text="ROUTE"
+                FontSize="34"
+                FontAttributes="Bold"
+                TextColor="#F5D547"
+                HorizontalOptions="Center"/>
+
+            <Label
+                Text="Criar conta"
+                FontSize="26"
+                FontAttributes="Bold"
+                TextColor="White"/>
+
+            <Label
+                Text="Preencha seus dados para começar."
+                TextColor="#BDBDBD"/>
+
+            <Label Text="Nome completo" TextColor="White"/>
+
+            <Entry
+                x:Name="NomeEntry"
+                Placeholder="Digite seu nome"
+                PlaceholderColor="#888888"
+                TextColor="White"
+                BackgroundColor="#242424"/>
+
+            <Label Text="E-mail" TextColor="White"/>
+
+            <Entry
+                x:Name="EmailEntry"
+                Placeholder="Digite seu e-mail"
+                PlaceholderColor="#888888"
+                TextColor="White"
+                Keyboard="Email"
+                BackgroundColor="#242424"/>
+
+            <Label Text="Senha" TextColor="White"/>
+
+            <Entry
+                x:Name="SenhaEntry"
+                Placeholder="Crie uma senha"
+                PlaceholderColor="#888888"
+                TextColor="White"
+                IsPassword="True"
+                BackgroundColor="#242424"/>
+
+            <Label Text="Confirmar senha" TextColor="White"/>
+
+            <Entry
+                x:Name="ConfirmarSenhaEntry"
+                Placeholder="Digite a senha novamente"
+                PlaceholderColor="#888888"
+                TextColor="White"
+                IsPassword="True"
+                BackgroundColor="#242424"/>
+
+            <Button
+                Text="CRIAR CONTA"
+                BackgroundColor="#F5D547"
+                TextColor="#101010"
+                FontAttributes="Bold"
+                CornerRadius="10"
+                HeightRequest="52"
+                Clicked="OnCadastrarClicked"/>
+
+            <Button
+                Text="VOLTAR AO LOGIN"
+                BackgroundColor="Transparent"
+                TextColor="#F5D547"
+                Clicked="OnVoltarClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

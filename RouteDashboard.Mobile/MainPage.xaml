@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="RouteDashboard.Mobile.MainPage"
+    BackgroundColor="#101010">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="20"
+            VerticalOptions="Center">
+
+            <Label
+                Text="ROUTE"
+                FontSize="36"
+                FontAttributes="Bold"
+                TextColor="#F5D547"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Dashboard"
+                FontSize="18"
+                TextColor="White"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Bem-vindo de volta!"
+                FontSize="24"
+                FontAttributes="Bold"
+                TextColor="White"
+                Margin="0,35,0,0" />
+
+            <Label
+                Text="Entre com seus dados para continuar."
+                FontSize="14"
+                TextColor="#BDBDBD" />
+
+            <Label
+                Text="E-mail"
+                TextColor="White"
+                FontAttributes="Bold" />
+
+            <Entry
+                x:Name="EmailEntry"
+                Placeholder="Digite seu e-mail"
+                PlaceholderColor="#888888"
+                TextColor="White"
+                Keyboard="Email"
+                BackgroundColor="#242424" />
+
+            <Label
+                Text="Senha"
+                TextColor="White"
+                FontAttributes="Bold" />
+
+            <Entry
+                x:Name="PasswordEntry"
+                Placeholder="Digite sua senha"
+                PlaceholderColor="#888888"
+                TextColor="White"
+                IsPassword="True"
+                BackgroundColor="#242424" />
+
+            <Button
+                Text="ENTRAR"
+                BackgroundColor="#F5D547"
+                TextColor="#101010"
+                FontAttributes="Bold"
+                CornerRadius="10"
+                HeightRequest="52" />
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                Spacing="5">
+
+                <Label
+                    Text="Ainda não tem uma conta?"
+                    TextColor="#BDBDBD" />
+
+                <Button
+                   
+                    Text="ENTRAR"
+                    BackgroundColor="#F5D547"
+                    TextColor="#101010"
+                    FontAttributes="Bold"
+                    CornerRadius="10"
+                    HeightRequest="52"
+                    Clicked="OnEntrarClicked"/> 
+
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
