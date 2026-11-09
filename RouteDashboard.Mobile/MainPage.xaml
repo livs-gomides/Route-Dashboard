@@ -68,7 +68,8 @@
                 TextColor="#101010"
                 FontAttributes="Bold"
                 CornerRadius="10"
-                HeightRequest="52" />
+                HeightRequest="52"
+                Clicked="OnEntrarClicked" />
 
             <HorizontalStackLayout
                 HorizontalOptions="Center"
@@ -76,17 +77,15 @@
 
                 <Label
                     Text="Ainda não tem uma conta?"
-                    TextColor="#BDBDBD" />
+                    TextColor="#BDBDBD"
+                    VerticalOptions="Center" />
 
                 <Button
-                   
-                    Text="ENTRAR"
-                    BackgroundColor="#F5D547"
-                    TextColor="#101010"
+                    Text="CADASTRAR"
+                    BackgroundColor="Transparent"
+                    TextColor="#F5D547"
                     FontAttributes="Bold"
-                    CornerRadius="10"
-                    HeightRequest="52"
-                    Clicked="OnEntrarClicked"/> 
+                    Clicked="OnCadastroClicked" />
 
             </HorizontalStackLayout>
 

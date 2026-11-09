@@ -63,13 +63,9 @@ public partial class CadastroPage : ContentPage
                 );
             }
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-            await DisplayAlert(
-                "Erro",
-                "Não foi possível conectar ao servidor. Verifique se a API está funcionando.",
-                "OK"
-            );
+            await DisplayAlert("Erro", $"Ocorreu um erro ao criar a conta: {ex.Message}", "OK");
         }
     }
 
